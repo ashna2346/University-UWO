@@ -5,7 +5,7 @@ This repository contains the codes that I have written for assignments during my
 
 - Computer Science 1026: Computer Science Fundamentals 1
 - Computer Science 1027: Computer Science Fundamentals 2
-- Computer Science 1033: Multimedia and Communication I  
+- Computer Science 1033: Multimedia and Communication 1
 
 # Year 2
 
