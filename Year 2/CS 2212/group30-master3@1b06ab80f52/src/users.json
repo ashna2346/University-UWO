@@ -1,0 +1,4 @@
+[
+  { "username": "user1", "password": "pass123","jsonFile":"poi.json"},
+  { "username": "user2", "password": "pass234","jsonFile":"poi2.json" }
+]
