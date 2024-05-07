@@ -1,0 +1,53 @@
+Script started on 2024-02-01 23:54:18-05:00 [COMMAND="./measure_time.sh" TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="80" LINES="24"]
+Current user: amitta6
+Current date: Thu Feb  1 11:54:18 PM EST 2024
+Current directory: /home/amitta6/cs3340/asn1
+Measuring time for the recursive Lucas number computation:
+lucas(0) = 2
+lucas(5) = 11
+lucas(10) = 123
+lucas(15) = 1364
+lucas(20) = 15127
+lucas(25) = 167761
+lucas(30) = 1860498
+lucas(35) = 20633239
+lucas(40) = 228826127
+lucas(45) = -1757246660
+lucas(50) = -1921017949
+
+real	1m23.580s
+user	1m23.110s
+sys	0m0.075s
+Measuring time for the efficient Lucas number computation using matrix exponentiation:
+Lucas(0) = 2
+Lucas(20) = 15127
+Lucas(40) = 228826127
+Lucas(60) = 3461452808002
+Lucas(80) = 52361396397820127
+Lucas(100) = -1139155321138466361
+Lucas(120) = -2795939413257253630
+Lucas(140) = 5347811994664660839
+Lucas(160) = -8271524584511622593
+Lucas(180) = -4435149930091013822
+Lucas(200) = 8566728179384764591
+Lucas(220) = 4955201673824879479
+Lucas(240) = -352179712341101566
+Lucas(260) = -1268672955607851337
+Lucas(280) = -6249783109692392593
+Lucas(300) = 362950400237129026
+Lucas(320) = -529246468703212673
+Lucas(340) = -387354483789832153
+Lucas(360) = 7082585619549648130
+Lucas(380) = -29558693758691065
+Lucas(400) = 6951655735469402015
+Lucas(420) = -7162095078750790846
+Lucas(440) = 8210776971223662927
+Lucas(460) = -8789253581020694569
+Lucas(480) = 881586227177639938
+Lucas(500) = 7548146805174218327
+
+real	0m0.074s
+user	0m0.040s
+sys	0m0.037s
+
+Script done on 2024-02-01 23:55:43-05:00 [COMMAND_EXIT_CODE="0"]
