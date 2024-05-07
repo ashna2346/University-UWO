@@ -14,11 +14,13 @@ This repository contains the codes that I have written for assignments during my
 - Computer Science 2210: Data Structures and Algorithms
 - Computer Science 2211: Software Tools and Systems Programming
 - Computer Science 2212: Introduction to Software Engineering
+- Computer Science 2214: Discrete Structures for Computing
 
 # Year 3
 
 - Computer Science 3305: Operating Systems
 - Computer Science 3307: Object-Oriented Design and Analysis
+- Computer Science 3331: Foundations of Computer Science 1
 - Computer Science 3340: Analysis of Algorithms 1
 - Computer Science 3342: Organization of Programming Languages
 - Computer Science 3350: Computer Organization
