@@ -1,0 +1,134 @@
+\doxysection{Deck\+Widget Class Reference}
+\hypertarget{class_deck_widget}{}\label{class_deck_widget}\index{DeckWidget@{DeckWidget}}
+
+
+Provides a widget for creating new decks.  
+
+
+
+
+{\ttfamily \#include $<$deckwidget.\+h$>$}
+
+Inheritance diagram for Deck\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_deck_widget}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_deck_widget_a531a829043a91b9811a86d55b4d4498f}\label{class_deck_widget_a531a829043a91b9811a86d55b4d4498f} 
+void {\bfseries cancel\+Deck\+Creation} ()
+\begin{DoxyCompactList}\small\item\em Emitted when the user decides to cancel deck creation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deck_widget_aa67ae87f8e664910af0a05b307e6b26a}{create\+Deck}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em Emitted when the user confirms the creation of a deck with a specified name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_deck_widget_a0e491269f3d5647e31e6d1af1c415a98}{Deck\+Widget}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_deck_widget}{Deck\+Widget} with an optional parent. \end{DoxyCompactList}\item 
+QLine\+Edit \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_deck_widget_adc12435c4508b8c1657530b033418e71}{get\+Name\+Edit}} () const
+\begin{DoxyCompactList}\small\item\em Provides access to the QLine\+Edit widget used for deck name input. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_deck_widget_ac6f61b812044d05dcc15da4504cd4fdc}{get\+Deck\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the current text entered in the deck name QLine\+Edit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides a widget for creating new decks. 
+
+\doxylink{class_deck_widget}{Deck\+Widget} allows users to input a name for a new deck and offers options to either cancel the operation or create the deck with the given name. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_deck_widget_a0e491269f3d5647e31e6d1af1c415a98}\label{class_deck_widget_a0e491269f3d5647e31e6d1af1c415a98} 
+\index{DeckWidget@{DeckWidget}!DeckWidget@{DeckWidget}}
+\index{DeckWidget@{DeckWidget}!DeckWidget@{DeckWidget}}
+\doxysubsubsection{\texorpdfstring{DeckWidget()}{DeckWidget()}}
+{\footnotesize\ttfamily Deck\+Widget\+::\+Deck\+Widget (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_deck_widget}{Deck\+Widget} with an optional parent. 
+
+Constructs a \doxylink{class_deck_widget}{Deck\+Widget} object with a parent.
+
+Initializes the widget components necessary for deck creation, including input fields and control buttons.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget of this \doxylink{class_deck_widget}{Deck\+Widget}, typically nullptr for top-\/level widgets.\\
+\hline
+\end{DoxyParams}
+This constructor initializes the \doxylink{class_deck_widget}{Deck\+Widget}, creating a QLine\+Edit for deck name input and setting up the layout of the widget.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget of this \doxylink{class_deck_widget}{Deck\+Widget}, typically nullptr if it\textquotesingle{}s a top-\/level widget. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Initialize the QLine\+Edit and set placeholder text
+
+\texorpdfstring{$<$}{<} Add the QLine\+Edit to the layout
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_deck_widget_aa67ae87f8e664910af0a05b307e6b26a}\label{class_deck_widget_aa67ae87f8e664910af0a05b307e6b26a} 
+\index{DeckWidget@{DeckWidget}!createDeck@{createDeck}}
+\index{createDeck@{createDeck}!DeckWidget@{DeckWidget}}
+\doxysubsubsection{\texorpdfstring{createDeck}{createDeck}}
+{\footnotesize\ttfamily void Deck\+Widget\+::create\+Deck (\begin{DoxyParamCaption}\item[{const QString \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emitted when the user confirms the creation of a deck with a specified name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the deck to be created. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_deck_widget_ac6f61b812044d05dcc15da4504cd4fdc}\label{class_deck_widget_ac6f61b812044d05dcc15da4504cd4fdc} 
+\index{DeckWidget@{DeckWidget}!getDeckName@{getDeckName}}
+\index{getDeckName@{getDeckName}!DeckWidget@{DeckWidget}}
+\doxysubsubsection{\texorpdfstring{getDeckName()}{getDeckName()}}
+{\footnotesize\ttfamily QString Deck\+Widget\+::get\+Deck\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the current text entered in the deck name QLine\+Edit. 
+
+Retrieves the current deck name input by the user.
+
+\begin{DoxyReturn}{Returns}
+The deck name as a QString entered by the user.
+\end{DoxyReturn}
+This method returns the text currently entered in the QLine\+Edit widget, which represents the name of the deck as input by the user.
+
+\begin{DoxyReturn}{Returns}
+A QString containing the current text of the name\+Edit QLine\+Edit. 
+\end{DoxyReturn}
+\Hypertarget{class_deck_widget_adc12435c4508b8c1657530b033418e71}\label{class_deck_widget_adc12435c4508b8c1657530b033418e71} 
+\index{DeckWidget@{DeckWidget}!getNameEdit@{getNameEdit}}
+\index{getNameEdit@{getNameEdit}!DeckWidget@{DeckWidget}}
+\doxysubsubsection{\texorpdfstring{getNameEdit()}{getNameEdit()}}
+{\footnotesize\ttfamily QLine\+Edit \texorpdfstring{$\ast$}{*} Deck\+Widget\+::get\+Name\+Edit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Provides access to the QLine\+Edit widget used for deck name input. 
+
+Returns the QLine\+Edit widget used for deck name input.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the QLine\+Edit widget where the user can enter the deck name.
+\end{DoxyReturn}
+This method provides access to the QLine\+Edit widget, allowing further customization or retrieval of its properties outside the \doxylink{class_deck_widget}{Deck\+Widget} class.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the QLine\+Edit widget used for inputting the deck name. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{deckwidget_8h}{deckwidget.\+h}}\item 
+\mbox{\hyperlink{deckwidget_8cpp}{deckwidget.\+cpp}}\end{DoxyCompactItemize}

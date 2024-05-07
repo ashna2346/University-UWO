@@ -1,0 +1,181 @@
+\doxysection{Deck\+Main\+Window Class Reference}
+\hypertarget{class_deck_main_window}{}\label{class_deck_main_window}\index{DeckMainWindow@{DeckMainWindow}}
+
+
+The \doxylink{class_deck_main_window}{Deck\+Main\+Window} class provides a UI for managing decks.  
+
+
+
+
+{\ttfamily \#include $<$deckmainwindow.\+h$>$}
+
+Inheritance diagram for Deck\+Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_deck_main_window}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_deck_main_window_ad151f042e5b2596f5074ae3b2c3dee5c}{save\+Deck\+Names\+To\+Json}} ()
+\begin{DoxyCompactList}\small\item\em Saves the current list of deck names to a JSON file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_deck_main_window_a7ec992504c889835bb57c7a007860b85}{Deck\+Main\+Window}} (\mbox{\hyperlink{class_main_window}{Main\+Window}} \texorpdfstring{$\ast$}{*}main\+Window, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_deck_main_window}{Deck\+Main\+Window} with a reference to the main window and an optional parent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deck_main_window_a7686b7953cae00d9367f322dc490fe5b}{load\+Deck\+Names\+From\+Json}} ()
+\begin{DoxyCompactList}\small\item\em Loads the list of deck names from a JSON file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deck_main_window_a1f22ce769ca8b2a9816e49a8e3e3c39d}{update\+UIWith\+Decks}} ()
+\begin{DoxyCompactList}\small\item\em Updates the UI with the current list of decks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deck_main_window_aef00982a1f1fce132262705762da475b}{delete\+Deck\+File}} (const QString \&deck\+Name)
+\begin{DoxyCompactList}\small\item\em Deletes the specified deck name inside Json file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_deck_main_window_ad486850459c06ad35e91052c1e4b993b}{clear\+Deck\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Clears all widgets from the deck layout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_deck_main_window_afe701fd66b76932c25b58bb14575ce0e}\label{class_deck_main_window_afe701fd66b76932c25b58bb14575ce0e} 
+QString\+List {\bfseries decks\+List}
+\begin{DoxyCompactList}\small\item\em List of deck names. \end{DoxyCompactList}\item 
+\Hypertarget{class_deck_main_window_a46f3c659e44d2f6b82a4bfa5340de286}\label{class_deck_main_window_a46f3c659e44d2f6b82a4bfa5340de286} 
+bool {\bfseries file\+Delete\+Executed}
+\begin{DoxyCompactList}\small\item\em Flag to check if file deletion was executed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_deck_main_window}{Deck\+Main\+Window} class provides a UI for managing decks. 
+
+\doxylink{class_deck_main_window}{Deck\+Main\+Window} extends QWidget to provide a user interface where users can add, edit, and delete decks. It interacts with the \doxylink{class_main_window}{Main\+Window} to reflect these changes across the application. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_deck_main_window_a7ec992504c889835bb57c7a007860b85}\label{class_deck_main_window_a7ec992504c889835bb57c7a007860b85} 
+\index{DeckMainWindow@{DeckMainWindow}!DeckMainWindow@{DeckMainWindow}}
+\index{DeckMainWindow@{DeckMainWindow}!DeckMainWindow@{DeckMainWindow}}
+\doxysubsubsection{\texorpdfstring{DeckMainWindow()}{DeckMainWindow()}}
+{\footnotesize\ttfamily Deck\+Main\+Window\+::\+Deck\+Main\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_main_window}{Main\+Window}} \texorpdfstring{$\ast$}{*}}]{main\+Window,  }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_deck_main_window}{Deck\+Main\+Window} with a reference to the main window and an optional parent. 
+
+Constructs a \doxylink{class_deck_main_window}{Deck\+Main\+Window} with a specified main window and parent widget.
+
+
+\begin{DoxyParams}{Parameters}
+{\em main\+Window} & A pointer to the main application window for inter-\/window communication. \\
+\hline
+{\em parent} & The parent widget, typically nullptr for top-\/level windows.\\
+\hline
+\end{DoxyParams}
+Sets up the main layout, including the instruction label and add button, and initializes the deck management functionalities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em main\+Window} & Pointer to the main application window for interaction. \\
+\hline
+{\em parent} & Parent widget, typically nullptr for top-\/level windows. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Instruction label
+
+\texorpdfstring{$<$}{<} Center the text
+
+\texorpdfstring{$<$}{<}Main layout
+
+\texorpdfstring{$<$}{<} Add the instruction label to the layout
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_deck_main_window_ad486850459c06ad35e91052c1e4b993b}\label{class_deck_main_window_ad486850459c06ad35e91052c1e4b993b} 
+\index{DeckMainWindow@{DeckMainWindow}!clearDeckLayout@{clearDeckLayout}}
+\index{clearDeckLayout@{clearDeckLayout}!DeckMainWindow@{DeckMainWindow}}
+\doxysubsubsection{\texorpdfstring{clearDeckLayout()}{clearDeckLayout()}}
+{\footnotesize\ttfamily void Deck\+Main\+Window\+::clear\+Deck\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears all widgets from the deck layout. 
+
+Iterates through and deletes all widgets currently displayed in the deck\+Layout, preparing it for an update or refresh. \texorpdfstring{$<$}{<} Delete the widget
+
+\texorpdfstring{$<$}{<} Delete the layout item\Hypertarget{class_deck_main_window_aef00982a1f1fce132262705762da475b}\label{class_deck_main_window_aef00982a1f1fce132262705762da475b} 
+\index{DeckMainWindow@{DeckMainWindow}!deleteDeckFile@{deleteDeckFile}}
+\index{deleteDeckFile@{deleteDeckFile}!DeckMainWindow@{DeckMainWindow}}
+\doxysubsubsection{\texorpdfstring{deleteDeckFile()}{deleteDeckFile()}}
+{\footnotesize\ttfamily void Deck\+Main\+Window\+::delete\+Deck\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{deck\+Name }\end{DoxyParamCaption})}
+
+
+
+Deletes the specified deck name inside Json file. 
+
+Deletes the JSON file associated with a deck.
+
+
+\begin{DoxyParams}{Parameters}
+{\em deck\+Name} & The name of the deck whose file is to be deleted.\\
+\hline
+\end{DoxyParams}
+Attempts to locate and delete the file corresponding to the given deck name. Logs messages based on the outcome of the deletion attempt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em deck\+Name} & Name of the deck whose file should be deleted. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Exit if file doesn\textquotesingle{}t exist to avoid unnecessary warning.\Hypertarget{class_deck_main_window_a7686b7953cae00d9367f322dc490fe5b}\label{class_deck_main_window_a7686b7953cae00d9367f322dc490fe5b} 
+\index{DeckMainWindow@{DeckMainWindow}!loadDeckNamesFromJson@{loadDeckNamesFromJson}}
+\index{loadDeckNamesFromJson@{loadDeckNamesFromJson}!DeckMainWindow@{DeckMainWindow}}
+\doxysubsubsection{\texorpdfstring{loadDeckNamesFromJson()}{loadDeckNamesFromJson()}}
+{\footnotesize\ttfamily void Deck\+Main\+Window\+::load\+Deck\+Names\+From\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the list of deck names from a JSON file. 
+
+Reads a JSON file containing deck names, deserializes it, and updates the application\textquotesingle{}s deck list to match the loaded data. \texorpdfstring{$<$}{<} Adjust to match save logic
+
+\texorpdfstring{$<$}{<} Ensure trimmed names
+
+\texorpdfstring{$<$}{<} Refresh UI with loaded decks\Hypertarget{class_deck_main_window_ad151f042e5b2596f5074ae3b2c3dee5c}\label{class_deck_main_window_ad151f042e5b2596f5074ae3b2c3dee5c} 
+\index{DeckMainWindow@{DeckMainWindow}!saveDeckNamesToJson@{saveDeckNamesToJson}}
+\index{saveDeckNamesToJson@{saveDeckNamesToJson}!DeckMainWindow@{DeckMainWindow}}
+\doxysubsubsection{\texorpdfstring{saveDeckNamesToJson}{saveDeckNamesToJson}}
+{\footnotesize\ttfamily void Deck\+Main\+Window\+::save\+Deck\+Names\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Saves the current list of deck names to a JSON file. 
+
+Iterates over the decks\+List, serializes it to JSON, and writes it to a file, ensuring the current state of decks is saved. \texorpdfstring{$<$}{<} Relative path to the \textquotesingle{}data\textquotesingle{} directory from the project root (adjust accordingly)
+
+\texorpdfstring{$<$}{<} Log the file path for verification
+
+\texorpdfstring{$<$}{<} Confirm success\Hypertarget{class_deck_main_window_a1f22ce769ca8b2a9816e49a8e3e3c39d}\label{class_deck_main_window_a1f22ce769ca8b2a9816e49a8e3e3c39d} 
+\index{DeckMainWindow@{DeckMainWindow}!updateUIWithDecks@{updateUIWithDecks}}
+\index{updateUIWithDecks@{updateUIWithDecks}!DeckMainWindow@{DeckMainWindow}}
+\doxysubsubsection{\texorpdfstring{updateUIWithDecks()}{updateUIWithDecks()}}
+{\footnotesize\ttfamily void Deck\+Main\+Window\+::update\+UIWith\+Decks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the UI with the current list of decks. 
+
+Updates the UI to reflect the current list of decks.
+
+Clears any existing deck display elements from the UI and repopulates them based on the current list of decks. \texorpdfstring{$<$}{<} Clear existing UI elements in deck\+Layout
+
+\texorpdfstring{$<$}{<} Deck name label
+
+\texorpdfstring{$<$}{<} Add Rename button
+
+\texorpdfstring{$<$}{<} Edit button
+
+\texorpdfstring{$<$}{<} Delete button
+
+\texorpdfstring{$<$}{<} Add the deck row to the main layout
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{deckmainwindow_8h}{deckmainwindow.\+h}}\item 
+\mbox{\hyperlink{deckmainwindow_8cpp}{deckmainwindow.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\doxysection{question.\+h}
+\hypertarget{question_8h_source}{}\label{question_8h_source}\mbox{\hyperlink{question_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ QUESTION\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ QUESTION\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}ui\_mainwindow.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <cereal/access.hpp>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <cereal/cereal.hpp>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_question}{Question}}\ \{}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00033\ \ \ \ \ std::string\ \mbox{\hyperlink{class_question_a9ebb76cf0c9888093b5b5f4f87931dd4}{\_question}};\ }
+\DoxyCodeLine{00034\ \ \ \ \ std::string\ \mbox{\hyperlink{class_question_a0127ed0fe59f15b70d255a2a9a35b210}{\_answer}};\ }
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ \mbox{\hyperlink{class_question_a280901e99725ce52ac721c635ced3010}{\_deckName}};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_question_a7e29475edc3ce5dea35b0e37b0360698}{\_difficultyRating}}\ =\ 0;\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_question_a2e1167d0407c7530b4f7a7492d0050d0}{Question}}();\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_question_a2e1167d0407c7530b4f7a7492d0050d0}{Question}}(\textcolor{keyword}{const}\ std::string\ \&q);\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_question_a2e1167d0407c7530b4f7a7492d0050d0}{Question}}(\textcolor{keyword}{const}\ std::string\ \&q,\ \textcolor{keyword}{const}\ std::string\ \&a,\ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_question_ae9e4f2826284b68dfd3e22cda089702c}{deckName}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_question_aefbd3a311c4da09857a19a396c6690af}{difficultyRating}}\ =\ 0);}
+\DoxyCodeLine{00043\ \ \ \ \ std::string\ \mbox{\hyperlink{class_question_a02a970c8532f24e24e890e9bd0251496}{question}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00044\ \ \ \ \ std::string\ \mbox{\hyperlink{class_question_a73756d7000f29e2882f6c2e706198563}{answer}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00045\ \ \ \ \ std::string\ \mbox{\hyperlink{class_question_ae9e4f2826284b68dfd3e22cda089702c}{deckName}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ label()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_question_aece7b1567e6856f0ae5cd02235ad0699}{setQuestion}}(\textcolor{keyword}{const}\ std::string\ \&q);\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_question_a28924cfa191d7cbcec43fe3c6c1f6aac}{setAnswer}}(\textcolor{keyword}{const}\ std::string\ \&a);\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_question_a0fa321a3db006cb519698c9fe1225906}{setDeckName}}(\textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_question_ae9e4f2826284b68dfd3e22cda089702c}{deckName}});\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_question_a9213377a7623584cb0dadea65e341bfb}{showQuestion}}(QLabel\ *qlbl)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_question_ab2b83304c5a2fafb7e82c608de491093}{updateForm}}(Ui::MainWindow\ *win)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_question_a3d8124d456fa51c4d7027b15cfac572f}{setDifficultyRating}}(\textcolor{keywordtype}{int}\ rating);\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_question_aefbd3a311c4da09857a19a396c6690af}{difficultyRating}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_question_ab2f44cbb59a08132f4c843e5225bba0e}{cereal::access}};\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ Archive>}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_question_afe5fae8d8a926ce6cbbb6954d3586cb2}{serialize}}(Archive\ \&\ ar)}
+\DoxyCodeLine{00072\ \ \ \ \ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ ar(CEREAL\_NVP(\mbox{\hyperlink{class_question_a9ebb76cf0c9888093b5b5f4f87931dd4}{\_question}}),\ CEREAL\_NVP(\mbox{\hyperlink{class_question_a0127ed0fe59f15b70d255a2a9a35b210}{\_answer}}),\ CEREAL\_NVP(\mbox{\hyperlink{class_question_a280901e99725ce52ac721c635ced3010}{\_deckName}}),\ CEREAL\_NVP(\mbox{\hyperlink{class_question_a7e29475edc3ce5dea35b0e37b0360698}{\_difficultyRating}}));}
+\DoxyCodeLine{00074\ \ \ \ \ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ QUESTION\_H}}
+
+\end{DoxyCode}

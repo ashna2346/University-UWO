@@ -1,0 +1,53 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Main entry point for the application.  
+
+
+{\ttfamily \#include $<$QApplication$>$}\newline
+{\ttfamily \#include "{}mainwindow.\+h"{}}\newline
+{\ttfamily \#include "{}deckmainwindow.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main function of the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main entry point for the application. 
+
+\begin{DoxyAuthor}{Authors}
+Siddhant Saraf, PArth Bhandari, Manpreet Saini, Sara Mehravar, AShna Mittal
+\end{DoxyAuthor}
+This file contains the main function, which initializes the QApplication, creates the main window, and enters the application\textquotesingle{}s main event loop. It sets up the initial state of the application and displays the primary window to the user. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Main function of the application. 
+
+Initializes the QApplication with the command line arguments, creates the main application window, and starts the event loop. It also sets up the main window of the application and displays it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of command line arguments. \\
+\hline
+{\em argv} & Array of command line arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Exit status of the application. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Create an instance of \doxylink{class_deck_main_window}{Deck\+Main\+Window} and pass the \doxylink{class_main_window}{Main\+Window} instance to it.
+
+\texorpdfstring{$<$}{<} Show the \doxylink{class_deck_main_window}{Deck\+Main\+Window}
+
+\texorpdfstring{$<$}{<} Enter the main event loop and wait for exit signal.

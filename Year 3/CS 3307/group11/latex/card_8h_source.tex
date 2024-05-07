@@ -1,0 +1,61 @@
+\doxysection{card.\+h}
+\hypertarget{card_8h_source}{}\label{card_8h_source}\mbox{\hyperlink{card_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ CARD\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ CARD\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{question_8h}{question.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_card}{Card}};}
+\DoxyCodeLine{00021\ \}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_card}{Card}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_card_aa04f647cfd4bdf119524ffa9b85f14b3}{Card}}(QWidget\ *parent\ =\ 0);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_card_aa04f647cfd4bdf119524ffa9b85f14b3}{Card}}(QWidget\ *parent\ =\ 0,\ std::vector<std::shared\_ptr<Question>>\ test\ =\ *(\textcolor{keyword}{new}\ std::vector<std::shared\_ptr<Question>>()));}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_card_a4e05b0b68e43e5e76c6194458cee874f}{\string~Card}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_card_aaec39b89e4cdcd0b9ce441a9fa7628b0}{setVeryEasy}}();\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_card_aa3efbf449f50cf180a0eb3f301d6a9b7}{setEasy}}();\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_card_a107b492b9219cf586d4e0ea1e5cb8865}{setModerate}}();\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_card_a30cda420a15ed89d782f2d183eb922c9}{setDifficult}}();\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_card_a006cadbc2fd84135d270bc8f94bc9b8d}{setVeryDifficult}}();\ }
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_show\_button\_clicked();\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_next\_button\_clicked();\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_back\_button\_clicked();\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ signals:}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_card_ae2f264671d09449ade20818a6f6876ba}{questionsUpdated}}();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00077\ \ \ \ \ Ui::Card\ *ui;\ }
+\DoxyCodeLine{00078\ \ \ \ \ std::vector<std::shared\_ptr<Question>>\ test\_;\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ index;\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ veryEasyCount\ =\ 0;\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ easyCount\ =\ 0;\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ moderateCount\ =\ 0;\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{int}\ difficultCount\ =\ 0;\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{int}\ veryDifficultCount\ =\ 0;\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{bool}\ showingSummary\ =\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ adjustDifficultyCount(\textcolor{keywordtype}{int}\ oldRating,\ \textcolor{keywordtype}{int}\ newRating);}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ resetSession();}
+\DoxyCodeLine{00099\ \};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CARD\_H}}
+
+\end{DoxyCode}

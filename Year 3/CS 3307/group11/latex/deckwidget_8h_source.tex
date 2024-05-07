@@ -1,0 +1,33 @@
+\doxysection{deckwidget.\+h}
+\hypertarget{deckwidget_8h_source}{}\label{deckwidget_8h_source}\mbox{\hyperlink{deckwidget_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ DECKWIDGET\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ DECKWIDGET\_H}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_deck_widget}{DeckWidget}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_deck_widget_a0e491269f3d5647e31e6d1af1c415a98}{DeckWidget}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00047\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_deck_widget_adc12435c4508b8c1657530b033418e71}{getNameEdit}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ \ \ \ \ QString\ \mbox{\hyperlink{class_deck_widget_ac6f61b812044d05dcc15da4504cd4fdc}{getDeckName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ signals:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_deck_widget_a531a829043a91b9811a86d55b4d4498f}{cancelDeckCreation}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_deck_widget_aa67ae87f8e664910af0a05b307e6b26a}{createDeck}}(\textcolor{keyword}{const}\ QString\ \&name);\ \ \textcolor{comment}{//\ Declare\ your\ signal\ here}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00068\ \ \ \ \ QLineEdit\ *nameEdit;\ }
+\DoxyCodeLine{00069\ \ \ \ \ QPushButton\ *createButton;\ }
+\DoxyCodeLine{00070\ \ \ \ \ QPushButton\ *cancelButton;\ }
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DECKWIDGET\_H}}
+
+\end{DoxyCode}

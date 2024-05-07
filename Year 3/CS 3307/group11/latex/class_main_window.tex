@@ -1,0 +1,145 @@
+\doxysection{Main\+Window Class Reference}
+\hypertarget{class_main_window}{}\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Main window class for the application.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a7ea8262a23c23464032d64af5b1f1d65}{save\+Updated\+Questions}} ()
+\begin{DoxyCompactList}\small\item\em Slot to save questions to JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_aa254fad033e5d66409be8990738b1951}{Main\+Window}} (const QString \&curr\+Deck, QWidget \texorpdfstring{$\ast$}{*}parent=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_question}{Question}} $>$ $>$ \& \mbox{\hyperlink{class_main_window_a212f83c6367df754039f1ff077509e92}{test}} () const
+\begin{DoxyCompactList}\small\item\em Returns the current test question. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a30ca3284147014f321a6e7dc53a2df3d}{set\+Curr\+Deck}} (const QString \&deck\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the current deck name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_adc5a500e755062d4c4f0ab3d9b8dc6ea}{on\+\_\+take\+\_\+test\+\_\+button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the test-\/taking process. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\texorpdfstring{$\sim$}{\string~}\+Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_main_window}{Main\+Window}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_main_window_a3d88d119b89ce0046d30cd2e21c1ac85}\label{class_main_window_a3d88d119b89ce0046d30cd2e21c1ac85} 
+QString {\bfseries \+\_\+curr\+Deck}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_main_window_a05fb9d72c044aa3bb7d187b994704e2f}\label{class_main_window_a05fb9d72c044aa3bb7d187b994704e2f} 
+void {\bfseries close\+Event} (QClose\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Handles when window gets closed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main window class for the application. 
+
+Manages the application\textquotesingle{}s main window and user interactions. It is responsible for displaying questions, handling user inputs, and managing the test lifecycle. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_main_window_aa254fad033e5d66409be8990738b1951}\label{class_main_window_aa254fad033e5d66409be8990738b1951} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{const QString \&}]{curr\+Deck,  }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+Constructs the \doxylink{class_main_window}{Main\+Window} with a specified deck and parent widget.
+
+Initializes the main window, sets up the UI components, and loads questions from the specified deck file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+Deck} & Name of the current deck to be loaded and displayed. \\
+\hline
+{\em parent} & Parent widget, typically nullptr for the main application window. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Setup UI and initial state\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{\texorpdfstring{$\sim$}{\string~}MainWindow}}
+\index{````~MainWindow@{\texorpdfstring{$\sim$}{\string~}MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MainWindow()}{\string~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\texorpdfstring{$\sim$}{\string~}\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_main_window}{Main\+Window}. 
+
+Cleans up allocated resources, ensuring no memory leaks. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_main_window_adc5a500e755062d4c4f0ab3d9b8dc6ea}\label{class_main_window_adc5a500e755062d4c4f0ab3d9b8dc6ea} 
+\index{MainWindow@{MainWindow}!on\_take\_test\_button\_clicked@{on\_take\_test\_button\_clicked}}
+\index{on\_take\_test\_button\_clicked@{on\_take\_test\_button\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_take\_test\_button\_clicked()}{on\_take\_test\_button\_clicked()}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+take\+\_\+test\+\_\+button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initiates the test-\/taking process. 
+
+This slot is triggered when the take test button is clicked. It starts the process for the user to take a test, which involves selecting and ordering the questions based on difficulty, and displaying them one at a time for the user to answer. \Hypertarget{class_main_window_a7ea8262a23c23464032d64af5b1f1d65}\label{class_main_window_a7ea8262a23c23464032d64af5b1f1d65} 
+\index{MainWindow@{MainWindow}!saveUpdatedQuestions@{saveUpdatedQuestions}}
+\index{saveUpdatedQuestions@{saveUpdatedQuestions}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{saveUpdatedQuestions}{saveUpdatedQuestions}}
+{\footnotesize\ttfamily void Main\+Window\+::save\+Updated\+Questions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Slot to save questions to JSON. 
+
+\texorpdfstring{$<$}{<} Use the existing function to save\Hypertarget{class_main_window_a30ca3284147014f321a6e7dc53a2df3d}\label{class_main_window_a30ca3284147014f321a6e7dc53a2df3d} 
+\index{MainWindow@{MainWindow}!setCurrDeck@{setCurrDeck}}
+\index{setCurrDeck@{setCurrDeck}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setCurrDeck()}{setCurrDeck()}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Curr\+Deck (\begin{DoxyParamCaption}\item[{const QString \&}]{curr\+Deck }\end{DoxyParamCaption})}
+
+
+
+Sets the current deck name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+Deck} & The new name of the current deck. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_main_window_a212f83c6367df754039f1ff077509e92}\label{class_main_window_a212f83c6367df754039f1ff077509e92} 
+\index{MainWindow@{MainWindow}!test@{test}}
+\index{test@{test}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_question}{Question}} $>$ $>$ \& Main\+Window\+::test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the current test question. 
+
+Returns a constant reference to the list of questions in the test.
+
+\begin{DoxyReturn}{Returns}
+Constant reference to the vector of shared\+\_\+ptr to \doxylink{class_question}{Question} objects. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}

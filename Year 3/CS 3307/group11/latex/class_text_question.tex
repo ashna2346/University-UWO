@@ -1,0 +1,228 @@
+\doxysection{Text\+Question Class Reference}
+\hypertarget{class_text_question}{}\label{class_text_question}\index{TextQuestion@{TextQuestion}}
+
+
+Specialized class for text-\/based questions.  
+
+
+
+
+{\ttfamily \#include $<$textquestion.\+h$>$}
+
+Inheritance diagram for Text\+Question\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_text_question}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_question_a6505f144dd5771fb55b81ad3e957dc66}{Text\+Question}} ()
+\begin{DoxyCompactList}\small\item\em Defaullt constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text_question_a770f2f085011947fb07e5f19453fc377}{Text\+Question}} (const std\+::string \&q)
+\begin{DoxyCompactList}\small\item\em Consructor with question content. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text_question_a650d1a9b4dd4186d562fb0f29ba074e7}{Text\+Question}} (const std\+::string \&q, const std\+::string \&a, const std\+::string \&\mbox{\hyperlink{class_question_ae9e4f2826284b68dfd3e22cda089702c}{deck\+Name}})
+\begin{DoxyCompactList}\small\item\em Constructor with qestion content, answer content and deck name the question belongs to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_text_question_ad3c29df2b87a9f6f780dfbc55634b3f1}{show\+Question}} (QLabel \texorpdfstring{$\ast$}{*}qlbl) const override
+\begin{DoxyCompactList}\small\item\em Displays the question text on the provided QLabel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_text_question_a29ba79d20ef71deb3cad817538a04af1}{update\+Form}} (Ui\+::\+Main\+Window \texorpdfstring{$\ast$}{*}win) const override
+\begin{DoxyCompactList}\small\item\em Updates the UI form with the question and answer text. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_text_question_a41b6e1ae8f8d9b73c349b0d60bd1f0c9}{label}} () const override
+\begin{DoxyCompactList}\small\item\em Returns a label that uniquely identifies the question. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{class_text_question_a2321328e34382df4093f8c5542a561c4}{serialize}} (Archive \&ar)
+\begin{DoxyCompactList}\small\item\em Serializes the \doxylink{class_text_question}{Text\+Question} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_question}{Question}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_question_a2e1167d0407c7530b4f7a7492d0050d0}{Question}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_question_ab02bdba560a7b0055116fbb3610ab207}{Question}} (const std\+::string \&q)
+\begin{DoxyCompactList}\small\item\em Constructor with content of the question, answer to the question, Deck name question belongs to and difficulty rating of the question. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_question_a4c7379fabd145473fee643dc1eb49f44}{Question}} (const std\+::string \&q, const std\+::string \&a, const std\+::string \&\mbox{\hyperlink{class_question_ae9e4f2826284b68dfd3e22cda089702c}{deck\+Name}}, int \mbox{\hyperlink{class_question_aefbd3a311c4da09857a19a396c6690af}{difficulty\+Rating}}=0)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor for initializing a \doxylink{class_question}{Question} with full details. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_question_a02a970c8532f24e24e890e9bd0251496}{question}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the question content. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_question_a73756d7000f29e2882f6c2e706198563}{answer}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the content of answer to the question. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_question_ae9e4f2826284b68dfd3e22cda089702c}{deck\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Getter for name of the deck question belongs to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_aece7b1567e6856f0ae5cd02235ad0699}{set\+Question}} (const std\+::string \&q)
+\begin{DoxyCompactList}\small\item\em Setter for the content of the question. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_a28924cfa191d7cbcec43fe3c6c1f6aac}{set\+Answer}} (const std\+::string \&a)
+\begin{DoxyCompactList}\small\item\em Setter for the content of the answer to the question. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_a0fa321a3db006cb519698c9fe1225906}{set\+Deck\+Name}} (const std\+::string \&\mbox{\hyperlink{class_question_ae9e4f2826284b68dfd3e22cda089702c}{deck\+Name}})
+\begin{DoxyCompactList}\small\item\em Setter for name of the deck, the question belongs to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_question_a3d8124d456fa51c4d7027b15cfac572f}{set\+Difficulty\+Rating}} (int rating)
+\begin{DoxyCompactList}\small\item\em Setter for the difficulty rating. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_question_aefbd3a311c4da09857a19a396c6690af}{difficulty\+Rating}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the difficulty rating. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Archive $>$ }\\void \mbox{\hyperlink{class_question_afe5fae8d8a926ce6cbbb6954d3586cb2}{serialize}} (Archive \&ar)
+\begin{DoxyCompactList}\small\item\em Serializes the question data for persistence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_question}{Question}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries \+\_\+question}
+\begin{DoxyCompactList}\small\item\em content of the question \end{DoxyCompactList}\item 
+std\+::string {\bfseries \+\_\+answer}
+\begin{DoxyCompactList}\small\item\em content of the answer to the question \end{DoxyCompactList}\item 
+std\+::string {\bfseries \+\_\+deck\+Name}
+\begin{DoxyCompactList}\small\item\em the deck name, question belongs to. \end{DoxyCompactList}\item 
+int {\bfseries \+\_\+difficulty\+Rating} = 0
+\begin{DoxyCompactList}\small\item\em The difficulty rating of the question. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Specialized class for text-\/based questions. 
+
+\doxylink{class_text_question}{Text\+Question} extends the \doxylink{class_question}{Question} class to provide implementations specific to text-\/based questions and answers. It includes methods for displaying the question on a QLabel, updating the UI form with the question and answer text, and providing a unique label for the question. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_text_question_a6505f144dd5771fb55b81ad3e957dc66}\label{class_text_question_a6505f144dd5771fb55b81ad3e957dc66} 
+\index{TextQuestion@{TextQuestion}!TextQuestion@{TextQuestion}}
+\index{TextQuestion@{TextQuestion}!TextQuestion@{TextQuestion}}
+\doxysubsubsection{\texorpdfstring{TextQuestion()}{TextQuestion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Text\+Question\+::\+Text\+Question (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Defaullt constructor. 
+
+Default constructor for \doxylink{class_text_question}{Text\+Question}.
+
+Initializes a new instance of \doxylink{class_text_question}{Text\+Question} with default values inherited from \doxylink{class_question}{Question}. \Hypertarget{class_text_question_a770f2f085011947fb07e5f19453fc377}\label{class_text_question_a770f2f085011947fb07e5f19453fc377} 
+\index{TextQuestion@{TextQuestion}!TextQuestion@{TextQuestion}}
+\index{TextQuestion@{TextQuestion}!TextQuestion@{TextQuestion}}
+\doxysubsubsection{\texorpdfstring{TextQuestion()}{TextQuestion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Text\+Question\+::\+Text\+Question (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{q }\end{DoxyParamCaption})}
+
+
+
+Consructor with question content. 
+
+Constructs a \doxylink{class_text_question}{Text\+Question} with the question text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The text of the question. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_text_question_a650d1a9b4dd4186d562fb0f29ba074e7}\label{class_text_question_a650d1a9b4dd4186d562fb0f29ba074e7} 
+\index{TextQuestion@{TextQuestion}!TextQuestion@{TextQuestion}}
+\index{TextQuestion@{TextQuestion}!TextQuestion@{TextQuestion}}
+\doxysubsubsection{\texorpdfstring{TextQuestion()}{TextQuestion()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Text\+Question\+::\+Text\+Question (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{q,  }\item[{const std\+::string \&}]{a,  }\item[{const std\+::string \&}]{deck\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor with qestion content, answer content and deck name the question belongs to. 
+
+Constructs a \doxylink{class_text_question}{Text\+Question} with question text, answer text, and the deck name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The text of the question. \\
+\hline
+{\em a} & The text of the answer. \\
+\hline
+{\em deck\+Name} & The name of the deck this question belongs to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_text_question_a41b6e1ae8f8d9b73c349b0d60bd1f0c9}\label{class_text_question_a41b6e1ae8f8d9b73c349b0d60bd1f0c9} 
+\index{TextQuestion@{TextQuestion}!label@{label}}
+\index{label@{label}!TextQuestion@{TextQuestion}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}}
+{\footnotesize\ttfamily std\+::string Text\+Question\+::label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns a label that uniquely identifies the question. 
+
+Generates a label for the \doxylink{class_text_question}{Text\+Question}.
+
+\begin{DoxyReturn}{Returns}
+A string that represents the question label.
+
+A string representing the label of the question. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_question}{Question}}.
+
+\Hypertarget{class_text_question_a2321328e34382df4093f8c5542a561c4}\label{class_text_question_a2321328e34382df4093f8c5542a561c4} 
+\index{TextQuestion@{TextQuestion}!serialize@{serialize}}
+\index{serialize@{serialize}!TextQuestion@{TextQuestion}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily template$<$class Archive $>$ \\
+void Text\+Question\+::serialize (\begin{DoxyParamCaption}\item[{Archive \&}]{ar }\end{DoxyParamCaption})}
+
+
+
+Serializes the \doxylink{class_text_question}{Text\+Question} object. 
+
+This method is used by Cereal to serialize and deserialize \doxylink{class_text_question}{Text\+Question} objects, allowing them to be saved to or loaded from storage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ar} & The archive (either input or output) used for serialization.\\
+\hline
+{\em ar} & The archive (input or output) used for serialization. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_text_question_ad3c29df2b87a9f6f780dfbc55634b3f1}\label{class_text_question_ad3c29df2b87a9f6f780dfbc55634b3f1} 
+\index{TextQuestion@{TextQuestion}!showQuestion@{showQuestion}}
+\index{showQuestion@{showQuestion}!TextQuestion@{TextQuestion}}
+\doxysubsubsection{\texorpdfstring{showQuestion()}{showQuestion()}}
+{\footnotesize\ttfamily void Text\+Question\+::show\+Question (\begin{DoxyParamCaption}\item[{QLabel \texorpdfstring{$\ast$}{*}}]{qlbl }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the question text on the provided QLabel. 
+
+Displays the question text on a QLabel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em qlbl} & Pointer to the QLabel where the question should be displayed. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_question_a9213377a7623584cb0dadea65e341bfb}{Question}}.
+
+\Hypertarget{class_text_question_a29ba79d20ef71deb3cad817538a04af1}\label{class_text_question_a29ba79d20ef71deb3cad817538a04af1} 
+\index{TextQuestion@{TextQuestion}!updateForm@{updateForm}}
+\index{updateForm@{updateForm}!TextQuestion@{TextQuestion}}
+\doxysubsubsection{\texorpdfstring{updateForm()}{updateForm()}}
+{\footnotesize\ttfamily void Text\+Question\+::update\+Form (\begin{DoxyParamCaption}\item[{Ui\+::\+Main\+Window \texorpdfstring{$\ast$}{*}}]{win }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the UI form with the question and answer text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & Pointer to the UI\+::\+Main\+Window to be updated with the question and answer.\\
+\hline
+\end{DoxyParams}
+This method sets the text of UI elements in the \doxylink{class_main_window}{Main\+Window} to reflect the current question and answer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & Pointer to the \doxylink{class_main_window}{Main\+Window} UI where the question and answer should be displayed. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_question_ab2b83304c5a2fafb7e82c608de491093}{Question}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{textquestion_8h}{textquestion.\+h}}\item 
+\mbox{\hyperlink{textquestion_8cpp}{textquestion.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\doxysection{Summary\+Dialog Class Reference}
+\hypertarget{class_summary_dialog}{}\label{class_summary_dialog}\index{SummaryDialog@{SummaryDialog}}
+
+
+A dialog window for displaying session summaries.  
+
+
+
+
+{\ttfamily \#include $<$summarydialog.\+h$>$}
+
+Inheritance diagram for Summary\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_summary_dialog}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_summary_dialog_a86b43ad470568249f0130c078218aaf4}{Summary\+Dialog}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_summary_dialog}{Summary\+Dialog} with an optional parent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_summary_dialog_a40b4807d3893a43c87ec5fadbe6fae45}{set\+Summary\+Text}} (const QString \&text)
+\begin{DoxyCompactList}\small\item\em Sets the summary text to be displayed in the dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A dialog window for displaying session summaries. 
+
+\doxylink{class_summary_dialog}{Summary\+Dialog} is a specialized QDialog that presents a summary or conclusion text to the user at the end of a session. It contains a QLabel for the summary text and provides a method to set this text. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_summary_dialog_a86b43ad470568249f0130c078218aaf4}\label{class_summary_dialog_a86b43ad470568249f0130c078218aaf4} 
+\index{SummaryDialog@{SummaryDialog}!SummaryDialog@{SummaryDialog}}
+\index{SummaryDialog@{SummaryDialog}!SummaryDialog@{SummaryDialog}}
+\doxysubsubsection{\texorpdfstring{SummaryDialog()}{SummaryDialog()}}
+{\footnotesize\ttfamily Summary\+Dialog\+::\+Summary\+Dialog (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_summary_dialog}{Summary\+Dialog} with an optional parent. 
+
+Constructs a \doxylink{class_summary_dialog}{Summary\+Dialog} with the given parent.
+
+Initializes a new instance of \doxylink{class_summary_dialog}{Summary\+Dialog}, setting up the UI components including a QLabel for displaying summary text and a close button.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget of the dialog, typically nullptr.\\
+\hline
+\end{DoxyParams}
+This constructor initializes the \doxylink{class_summary_dialog}{Summary\+Dialog} with a title and a fixed size. It creates a QLabel for displaying the session summary and a QPush\+Button for closing the dialog. The layout for these widgets is also set here.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget of this dialog, typically nullptr. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Set up the dialog\textquotesingle{}s properties
+
+\texorpdfstring{$<$}{<} Sets the window title for the dialog
+
+\texorpdfstring{$<$}{<} Sets a fixed size for the dialog
+
+\texorpdfstring{$<$}{<} Create the summary label, default text and word wrapping enaabled
+
+\texorpdfstring{$<$}{<} Create a layout and add the label to it
+
+\texorpdfstring{$<$}{<} Optionally add a close button
+
+\texorpdfstring{$<$}{<} Set the dialog\textquotesingle{}s main layout
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_summary_dialog_a40b4807d3893a43c87ec5fadbe6fae45}\label{class_summary_dialog_a40b4807d3893a43c87ec5fadbe6fae45} 
+\index{SummaryDialog@{SummaryDialog}!setSummaryText@{setSummaryText}}
+\index{setSummaryText@{setSummaryText}!SummaryDialog@{SummaryDialog}}
+\doxysubsubsection{\texorpdfstring{setSummaryText()}{setSummaryText()}}
+{\footnotesize\ttfamily void Summary\+Dialog\+::set\+Summary\+Text (\begin{DoxyParamCaption}\item[{const QString \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Sets the summary text to be displayed in the dialog. 
+
+Sets the text of the summary label to the provided summary.
+
+This method updates the text of the internal QLabel to display the summary or conclusion of a session. It can be called before showing the dialog to the user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The summary text to be displayed.\\
+\hline
+\end{DoxyParams}
+This method allows updating the text of the summary label within the dialog, typically called to display the results or summary of a session before showing the dialog.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The summary text to be displayed. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Update the summary label with the provided text
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{summarydialog_8h}{summarydialog.\+h}}\item 
+\mbox{\hyperlink{summarydialog_8cpp}{summarydialog.\+cpp}}\end{DoxyCompactItemize}

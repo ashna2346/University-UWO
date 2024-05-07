@@ -1,0 +1,178 @@
+\doxysection{Card Class Reference}
+\hypertarget{class_card}{}\label{class_card}\index{Card@{Card}}
+
+
+For displaying quiz questions and interacting with them.  
+
+
+
+
+{\ttfamily \#include $<$card.\+h$>$}
+
+Inheritance diagram for Card\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_card}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_card_aaec39b89e4cdcd0b9ce441a9fa7628b0}{set\+Very\+Easy}} ()
+\begin{DoxyCompactList}\small\item\em Sets the current question\textquotesingle{}s difficulty to Very Easy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_card_aa3efbf449f50cf180a0eb3f301d6a9b7}{set\+Easy}} ()
+\begin{DoxyCompactList}\small\item\em Sets the current question\textquotesingle{}s difficulty to Easy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_card_a107b492b9219cf586d4e0ea1e5cb8865}{set\+Moderate}} ()
+\begin{DoxyCompactList}\small\item\em Sets the current question\textquotesingle{}s difficulty to Moderate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_card_a30cda420a15ed89d782f2d183eb922c9}{set\+Difficult}} ()
+\begin{DoxyCompactList}\small\item\em Sets the current question\textquotesingle{}s difficulty to Difficult. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_card_a006cadbc2fd84135d270bc8f94bc9b8d}{set\+Very\+Difficult}} ()
+\begin{DoxyCompactList}\small\item\em Sets the current question\textquotesingle{}s difficulty to Very Difficult. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_card_ae2f264671d09449ade20818a6f6876ba}\label{class_card_ae2f264671d09449ade20818a6f6876ba} 
+void {\bfseries questions\+Updated} ()
+\begin{DoxyCompactList}\small\item\em Emitted when any question\textquotesingle{}s difficulty rating is updated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_card_aa04f647cfd4bdf119524ffa9b85f14b3}{Card}} (QWidget \texorpdfstring{$\ast$}{*}parent=0)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_card}{Card} dialog with a parent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_card_ac80ebe221def1aaa3f86b18e2ace69d9}{Card}} (QWidget \texorpdfstring{$\ast$}{*}parent=0, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_question}{Question}} $>$ $>$ test= \texorpdfstring{$\ast$}{*}(new std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_question}{Question}} $>$ $>$()))
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_card}{Card} dialog with a list of questions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_card_a4e05b0b68e43e5e76c6194458cee874f}{\texorpdfstring{$\sim$}{\string~}\+Card}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \doxylink{class_card}{Card} dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+For displaying quiz questions and interacting with them. 
+
+\doxylink{class_card}{Card} displays individual questions to the user, allows them to answer, navigate through questions, rate the difficulty of each question, and see a summary of their session at the end. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_card_aa04f647cfd4bdf119524ffa9b85f14b3}\label{class_card_aa04f647cfd4bdf119524ffa9b85f14b3} 
+\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{Card()}{Card()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Card\+::\+Card (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_card}{Card} dialog with a parent. 
+
+Default constructor for the \doxylink{class_card}{Card} class.
+
+This constructor initializes the dialog with no questions loaded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget of this dialog, typically nullptr.\\
+\hline
+\end{DoxyParams}
+Initializes a new \doxylink{class_card}{Card} instance. Sets up the user interface and initializes the index to start from the first question.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget of this dialog, usually nullptr. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_card_ac80ebe221def1aaa3f86b18e2ace69d9}\label{class_card_ac80ebe221def1aaa3f86b18e2ace69d9} 
+\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{Card()}{Card()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Card\+::\+Card (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily 0},  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_question}{Question}} $>$ $>$}]{test = {\ttfamily \texorpdfstring{$\ast$}{*}(new~std\+:\+:vector$<$std\+:\+:shared\+\_\+ptr$<$\mbox{\hyperlink{class_question}{Question}}$>$$>$())} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_card}{Card} dialog with a list of questions. 
+
+Overloaded constructor for the \doxylink{class_card}{Card} class with a list of questions.
+
+This constructor initializes the dialog with a list of questions and displays the first one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget of this dialog, typically nullptr. \\
+\hline
+{\em test} & A vector of shared pointers to \doxylink{class_question}{Question} objects.\\
+\hline
+\end{DoxyParams}
+Initializes a new \doxylink{class_card}{Card} instance with a list of questions. Sets up the user interface, displays the first question, and connects the difficulty rating buttons to their slots.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget of this dialog, usually nullptr. \\
+\hline
+{\em test} & A vector of shared\+\_\+ptr to \doxylink{class_question}{Question} objects to be displayed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_card_a4e05b0b68e43e5e76c6194458cee874f}\label{class_card_a4e05b0b68e43e5e76c6194458cee874f} 
+\index{Card@{Card}!````~Card@{\texorpdfstring{$\sim$}{\string~}Card}}
+\index{````~Card@{\texorpdfstring{$\sim$}{\string~}Card}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Card()}{\string~Card()}}
+{\footnotesize\ttfamily Card\+::\texorpdfstring{$\sim$}{\string~}\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \doxylink{class_card}{Card} dialog. 
+
+Destructor for the \doxylink{class_card}{Card} class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_card_a30cda420a15ed89d782f2d183eb922c9}\label{class_card_a30cda420a15ed89d782f2d183eb922c9} 
+\index{Card@{Card}!setDifficult@{setDifficult}}
+\index{setDifficult@{setDifficult}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{setDifficult}{setDifficult}}
+{\footnotesize\ttfamily void Card\+::set\+Difficult (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Sets the current question\textquotesingle{}s difficulty to Difficult. 
+
+Slot to set the current question\textquotesingle{}s difficulty rating to Difficult. \Hypertarget{class_card_aa3efbf449f50cf180a0eb3f301d6a9b7}\label{class_card_aa3efbf449f50cf180a0eb3f301d6a9b7} 
+\index{Card@{Card}!setEasy@{setEasy}}
+\index{setEasy@{setEasy}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{setEasy}{setEasy}}
+{\footnotesize\ttfamily void Card\+::set\+Easy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Sets the current question\textquotesingle{}s difficulty to Easy. 
+
+Slot to set the current question\textquotesingle{}s difficulty rating to Easy. \Hypertarget{class_card_a107b492b9219cf586d4e0ea1e5cb8865}\label{class_card_a107b492b9219cf586d4e0ea1e5cb8865} 
+\index{Card@{Card}!setModerate@{setModerate}}
+\index{setModerate@{setModerate}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{setModerate}{setModerate}}
+{\footnotesize\ttfamily void Card\+::set\+Moderate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Sets the current question\textquotesingle{}s difficulty to Moderate. 
+
+Slot to set the current question\textquotesingle{}s difficulty rating to Moderate. \Hypertarget{class_card_a006cadbc2fd84135d270bc8f94bc9b8d}\label{class_card_a006cadbc2fd84135d270bc8f94bc9b8d} 
+\index{Card@{Card}!setVeryDifficult@{setVeryDifficult}}
+\index{setVeryDifficult@{setVeryDifficult}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{setVeryDifficult}{setVeryDifficult}}
+{\footnotesize\ttfamily void Card\+::set\+Very\+Difficult (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Sets the current question\textquotesingle{}s difficulty to Very Difficult. 
+
+Slot to set the current question\textquotesingle{}s difficulty rating to Very Difficult. \Hypertarget{class_card_aaec39b89e4cdcd0b9ce441a9fa7628b0}\label{class_card_aaec39b89e4cdcd0b9ce441a9fa7628b0} 
+\index{Card@{Card}!setVeryEasy@{setVeryEasy}}
+\index{setVeryEasy@{setVeryEasy}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{setVeryEasy}{setVeryEasy}}
+{\footnotesize\ttfamily void Card\+::set\+Very\+Easy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Sets the current question\textquotesingle{}s difficulty to Very Easy. 
+
+Slot to set the current question\textquotesingle{}s difficulty rating to Very Easy. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{card_8h}{card.\+h}}\item 
+\mbox{\hyperlink{card_8cpp}{card.\+cpp}}\end{DoxyCompactItemize}

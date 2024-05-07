@@ -1,0 +1,75 @@
+\doxysection{textquestion.\+cpp File Reference}
+\hypertarget{textquestion_8cpp}{}\label{textquestion_8cpp}\index{textquestion.cpp@{textquestion.cpp}}
+
+
+Implementation of the \doxylink{class_text_question}{Text\+Question} class for text-\/based quiz questions.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}question.\+h"{}}\newline
+{\ttfamily \#include "{}textquestion.\+h"{}}\newline
+{\ttfamily \#include $<$cereal/archives/xml.\+hpp$>$}\newline
+{\ttfamily \#include $<$cereal/types/polymorphic.\+hpp$>$}\newline
+{\ttfamily \#include $<$QLine\+Edit$>$}\newline
+{\ttfamily \#include $<$QPlain\+Text\+Edit$>$}\newline
+{\ttfamily \#include $<$QTab\+Widget$>$}\newline
+{\ttfamily \#include "{}ui\+\_\+mainwindow.\+h"{}}\newline
+{\ttfamily \#include $<$cereal/archives/json.\+hpp$>$}\newline
+{\ttfamily \#include $<$cereal/types/vector.\+hpp$>$}\newline
+{\ttfamily \#include $<$cereal/types/memory.\+hpp$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{textquestion_8cpp_ac6d8f4bfe947164a7354572cf60ea8ed}{save\+Questions}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_question}{Question}} $>$ $>$ \&questions, const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Saves a collection of questions to a JSON file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{textquestion_8cpp_a7566107667645a8e1a655c2978872170}{load\+Questions}} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_question}{Question}} $>$ $>$ \&questions, const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Loads a collection of questions from a JSON file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the \doxylink{class_text_question}{Text\+Question} class for text-\/based quiz questions. 
+
+\begin{DoxyAuthor}{Author}
+Manpreet Saini
+\end{DoxyAuthor}
+Provides the implementation for \doxylink{class_text_question}{Text\+Question}, a specialized type of question that includes text for both the question and answer. This file also includes serialization functions for saving and loading questions to and from a file. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{textquestion_8cpp_a7566107667645a8e1a655c2978872170}\label{textquestion_8cpp_a7566107667645a8e1a655c2978872170} 
+\index{textquestion.cpp@{textquestion.cpp}!loadQuestions@{loadQuestions}}
+\index{loadQuestions@{loadQuestions}!textquestion.cpp@{textquestion.cpp}}
+\doxysubsubsection{\texorpdfstring{loadQuestions()}{loadQuestions()}}
+{\footnotesize\ttfamily void load\+Questions (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_question}{Question}} $>$ $>$ \&}]{questions,  }\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Loads a collection of questions from a JSON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em questions} & A vector of shared pointers to \doxylink{class_question}{Question} objects to be populated. \\
+\hline
+{\em file\+Path} & The path to the JSON file from which questions will be loaded. Register \doxylink{class_text_question}{Text\+Question} with Cereal for polymorphic serialization \\
+\hline
+\end{DoxyParams}
+\Hypertarget{textquestion_8cpp_ac6d8f4bfe947164a7354572cf60ea8ed}\label{textquestion_8cpp_ac6d8f4bfe947164a7354572cf60ea8ed} 
+\index{textquestion.cpp@{textquestion.cpp}!saveQuestions@{saveQuestions}}
+\index{saveQuestions@{saveQuestions}!textquestion.cpp@{textquestion.cpp}}
+\doxysubsubsection{\texorpdfstring{saveQuestions()}{saveQuestions()}}
+{\footnotesize\ttfamily void save\+Questions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_question}{Question}} $>$ $>$ \&}]{questions,  }\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Saves a collection of questions to a JSON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em questions} & A vector of shared pointers to \doxylink{class_question}{Question} objects. \\
+\hline
+{\em file\+Path} & The path to the JSON file where questions will be saved. \\
+\hline
+\end{DoxyParams}

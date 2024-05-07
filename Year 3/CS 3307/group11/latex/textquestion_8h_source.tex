@@ -1,0 +1,25 @@
+\doxysection{textquestion.\+h}
+\hypertarget{textquestion_8h_source}{}\label{textquestion_8h_source}\mbox{\hyperlink{textquestion_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ TEXTQUESTION\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ TEXTQUESTION\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{question_8h}{question.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <cereal/types/polymorphic.hpp>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_text_question}{TextQuestion}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_question}{Question}}}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_text_question_a6505f144dd5771fb55b81ad3e957dc66}{TextQuestion}}();\ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_text_question_a6505f144dd5771fb55b81ad3e957dc66}{TextQuestion}}(\textcolor{keyword}{const}\ std::string\ \&q);\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_text_question_a6505f144dd5771fb55b81ad3e957dc66}{TextQuestion}}(\textcolor{keyword}{const}\ std::string\ \&q,\ \textcolor{keyword}{const}\ std::string\ \&a,\ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_question_ae9e4f2826284b68dfd3e22cda089702c}{deckName}});}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_question_ad3c29df2b87a9f6f780dfbc55634b3f1}{showQuestion}}(QLabel\ *qlbl)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_question_a29ba79d20ef71deb3cad817538a04af1}{updateForm}}(Ui::MainWindow\ *win)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00045\ \ \ \ \ std::string\ \mbox{\hyperlink{class_text_question_a41b6e1ae8f8d9b73c349b0d60bd1f0c9}{label}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ Archive>}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_question_a2321328e34382df4093f8c5542a561c4}{serialize}}(Archive\ \&ar);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TEXTQUESTION\_H}}
+
+\end{DoxyCode}
