@@ -1,0 +1,45 @@
+Q1-1) Suppose the command 'ls' were unavailable, We could use the 'dir' command instead to view files in the current directory since it is a one of the basic commands to help us navigate through the system.
+The 'echo *' command could also be used to view files in the current directory instead. This command is very useful when writing shell scripts. It works because echo is used for writing std output and a pointer * means all it may be referring to current directory and directory node pointer has all files node address in itself so.
+
+2) The rm command needs to be supplied with the -i to ensure that the user IS prompted before a file or directory is removed. -f is used with rm so that the user IS NOT prompted before a file or directory is removed. In terms of precedence -f takes a higher precedence if both options are used.
+
+3) mv command renames a file or directory. It can also move a group of files to a directory. However it cannot rename a group pf files.
+
+rename command is used to make bulk naming changes like a hundred files. When operated on regular files or symbolic links, the behavior of rename is identical to that of mv. However, rename differs from mv when handling directories:
+• If old is a directory and new exists as a directory, rename simply removes new and moves old to new. The mv command makes old a subdirectory of new.
+• If old is a regular file, new can’t be a directory. mv doesn’t operate with this constraint.
+
+4) Executable and Linkable Format or ELF defines the structure for binaries, libraries, and core files. The formal specification allows the operating system to interpreter its underlying machine instructions correctly. ELF files are typically the output of a compiler or linker and are a binary format. With the right tools, such file can be analyzed and better understood.
+
+5) The du command shows how much disk space is used for the given file. In contrast, the ls command shows the size of the file. The space used can be larger than the file size, depending on the filesystem used. so du is showing 1 byte. It is probably a sparse file. That means that not all blocks are allocated and the file uses much less space than the file size suggests. 
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Q2-1) mkdir -p /grandparent/parent/child
+
+2) creation command: mkdir Hello\ World # directory name is 'Hello World'
+deletion command: rmdir Hello\ World
+
+3) mkdir -m 500 hello # directory name is Hello
+
+4) command : cd -
+
+5) pushd -N #N is a numeric parameter 
+pushd -6 #quickly cd to it
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Q3-1) ___chmod___command__goes__here | ls -l filename.txt
+
+2) chown --reference = file2 file1   
+
+3) stat -c %a [filename]
+
+4) chmod g+w, u-w  ~/file.txt
+
+5)  If the users(u/g/o/a) flag is omitted, the default one is a and the permissions that are set by umask are not affected.
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
