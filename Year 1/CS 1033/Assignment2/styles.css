@@ -1,0 +1,17 @@
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #4F2683;
+    font-size: 60px;
+}
+    
+.lin{
+    color:blueviolet;
+    font-weight:bold;
+}
+    
+.lin:hover{
+    color: darkblue;
+}
